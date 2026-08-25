@@ -2,18 +2,148 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1a3a24" />
+
+    <title>Velazquez Lawn Service — Lawn Care &amp; Landscaping in Porter, TX</title>
     <meta
       name="description"
       content="Velazquez Lawn Service — mowing, landscaping, cleanup, and trimming across North Houston & Montgomery County. Free estimates, fully insured, 15+ years experience."
     />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+
+    <!--
+      Absolute URLs below assume the Netlify default domain. If a custom domain
+      is added, update every https://velasquez-lawn.netlify.app occurrence here
+      (canonical, og:url, og:image, and the JSON-LD @id/url).
+    -->
+    <link rel="canonical" href="https://velasquez-lawn.netlify.app/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Velazquez Lawn Service" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="https://velasquez-lawn.netlify.app/" />
+    <meta
+      property="og:title"
+      content="Velazquez Lawn Service — Lawn Care &amp; Landscaping in Porter, TX"
+    />
+    <meta
+      property="og:description"
+      content="Mowing, landscaping, cleanup, and trimming across North Houston & Montgomery County. Free estimates, fully insured, 15+ years experience."
+    />
+    <!-- TODO: add public/og-image.jpg (1200x630). Until it exists, link previews render without an image. -->
+    <meta property="og:image" content="https://velasquez-lawn.netlify.app/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="A freshly mowed lawn maintained by Velazquez Lawn Service"
+    />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Velazquez Lawn Service — Lawn Care &amp; Landscaping in Porter, TX"
+    />
+    <meta
+      name="twitter:description"
+      content="Mowing, landscaping, cleanup, and trimming across North Houston & Montgomery County. Free estimates, fully insured, 15+ years experience."
+    />
+    <meta name="twitter:image" content="https://velasquez-lawn.netlify.app/og-image.jpg" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <title>Velazquez Lawn Service — Maintenance &amp; Landscape</title>
+
+    <!--
+      LocalBusiness structured data. Intentionally omits aggregateRating/review —
+      the on-page testimonials are still placeholders (see Reviews.jsx), and
+      marking up fake ratings is a Google manual-action risk. Add them here only
+      once real, verifiable reviews are on the page.
+    -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LandscapingBusiness",
+        "@id": "https://velasquez-lawn.netlify.app/#business",
+        "name": "Velazquez Lawn Service",
+        "url": "https://velasquez-lawn.netlify.app/",
+        "description": "Mowing, landscaping, cleanup, and trimming for homes across North Houston and Montgomery County. Fully insured crew with 15+ years of experience.",
+        "telephone": "+1-281-354-9580",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Porter",
+          "addressRegion": "TX",
+          "addressCountry": "US"
+        },
+        "areaServed": [
+          { "@type": "AdministrativeArea", "name": "Montgomery County, TX" },
+          { "@type": "City", "name": "Porter, TX" },
+          { "@type": "City", "name": "Kingwood, TX" },
+          { "@type": "City", "name": "New Caney, TX" },
+          { "@type": "City", "name": "Houston, TX" }
+        ],
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday"
+            ],
+            "opens": "08:00",
+            "closes": "17:00"
+          }
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Lawn & Landscape Services",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Mowing",
+                "description": "Weekly or bi-weekly cuts, clean edges, and blown-off walkways."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Landscaping",
+                "description": "Beds, mulch, and plantings designed around your home's style and budget."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Clean Up",
+                "description": "Seasonal and storm cleanup to get your property ready for what comes next."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Trimming",
+                "description": "Hedge and tree trimming that keeps growth healthy and the yard sharp."
+              }
+            }
+          ]
+        }
+      }
+    </script>
   </head>
   <body>
     <!--
