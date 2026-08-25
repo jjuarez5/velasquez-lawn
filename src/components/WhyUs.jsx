@@ -8,7 +8,7 @@ const POINTS = [
 
 export default function WhyUs() {
   return (
-    <section className="px-6 sm:px-[6%] py-[70px] md:py-[110px]">
+    <section id="why-us" className="px-6 sm:px-[6%] py-[70px] md:py-[110px]">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-[60px] items-center">
         <div className="relative aspect-[4/3] md:aspect-square rounded-[28px] overflow-hidden bg-gradient-to-br from-[#dff2e0] to-[#b9e6bc]">
           <div className="split-visual-texture" />
@@ -16,7 +16,7 @@ export default function WhyUs() {
 
         <div>
           <div className="text-green font-bold text-[0.85rem] tracking-[0.08em] uppercase">
-            Why Velazquez Lawn Service
+            Why ScapeTex
           </div>
           <h2 className="text-forest text-[clamp(1.75rem,5vw,2.2rem)] mt-2.5 font-display font-semibold">
             A crew that actually shows up

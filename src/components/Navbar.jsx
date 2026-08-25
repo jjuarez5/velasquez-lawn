@@ -9,7 +9,7 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between gap-3 px-6 sm:px-[6%] py-4 sm:py-[22px] bg-paper/85 backdrop-blur-md border-b border-forest/[0.08]">
       <div className="flex items-center gap-2 sm:gap-2.5 font-bold text-[0.95rem] sm:text-[1.15rem] font-display leading-tight">
         <span className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-green flex-shrink-0" />
-        Velazquez Lawn Service
+        ScapeTex
       </div>
       <ul className="hidden md:flex gap-9">
         {NAV_LINKS.map((link) => (

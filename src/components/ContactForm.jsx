@@ -1,12 +1,15 @@
 const FIELD_CLASS =
-  'w-full px-[18px] py-3.5 rounded-[14px] bg-paper border border-forest/10 text-ink text-[0.95rem] placeholder-[#8a998d] focus:outline-none focus:border-green focus:ring-2 focus:ring-green/20 transition-colors'
+  "w-full px-[18px] py-3.5 rounded-[14px] bg-paper border border-forest/10 text-ink text-[0.95rem] placeholder-[#8a998d] focus:outline-none focus:border-green focus:ring-2 focus:ring-green/20 transition-colors";
 
 export default function ContactForm() {
   return (
     <div className="bg-white rounded-[24px] sm:rounded-[28px] p-6 sm:p-10 shadow-card">
-      <h3 className="font-display text-forest text-[1.35rem] font-semibold">Request a Free Estimate</h3>
+      <h3 className="font-display text-green text-[1.35rem] font-semibold">
+        Request a Free Estimate
+      </h3>
       <p className="mt-2 mb-7 text-[0.9rem] text-[#5a6b5e] leading-relaxed">
-        Send your address and what you need — we'll get back to you the same day.
+        Send your address and what you need — we'll get back to you the same
+        day.
       </p>
 
       <form
@@ -20,13 +23,31 @@ export default function ContactForm() {
         <input type="hidden" name="form-name" value="contact" />
         <p className="hidden">
           <label>
-            Don&rsquo;t fill this out if you&rsquo;re human: <input name="bot-field" />
+            Don&rsquo;t fill this out if you&rsquo;re human:{" "}
+            <input name="bot-field" />
           </label>
         </p>
 
-        <input type="text" name="contactName" placeholder="Your name" className={FIELD_CLASS} required />
-        <input type="email" name="contactEmail" placeholder="Your email" className={FIELD_CLASS} required />
-        <input type="tel" name="contactPhone" placeholder="(281) 555-0123" className={FIELD_CLASS} />
+        <input
+          type="text"
+          name="contactName"
+          placeholder="Your name"
+          className={FIELD_CLASS}
+          required
+        />
+        <input
+          type="email"
+          name="contactEmail"
+          placeholder="Your email"
+          className={FIELD_CLASS}
+          required
+        />
+        <input
+          type="tel"
+          name="contactPhone"
+          placeholder="(281) 555-0123"
+          className={FIELD_CLASS}
+        />
         <textarea
           name="message"
           placeholder="Property address and what you need — mowing, landscaping, cleanup, or trimming."
@@ -45,5 +66,5 @@ export default function ContactForm() {
         Free estimates, no obligation. We reply 8am&ndash;5pm, Mon&ndash;Sat.
       </p>
     </div>
-  )
+  );
 }

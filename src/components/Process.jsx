@@ -7,7 +7,7 @@ const STEPS = [
 
 export default function Process() {
   return (
-    <div id="why-us" className="bg-forest rounded-[28px] sm:rounded-[36px] px-7 sm:px-[6%] py-[50px] sm:py-[70px] text-white mx-6 sm:mx-[6%]">
+    <div className="bg-forest rounded-[28px] sm:rounded-[36px] px-7 sm:px-[6%] py-[50px] sm:py-[70px] text-white mx-6 sm:mx-[6%]">
       <div>
         <div className="text-green-light font-bold text-[0.85rem] tracking-[0.08em] uppercase">How It Works</div>
         <h2 className="font-display text-white tracking-tight mt-3 text-[clamp(1.75rem,3.6vw,3rem)]">
