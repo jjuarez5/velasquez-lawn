@@ -7,4 +7,4 @@
   NODE_VERSION = "24"
   # Set explicitly so an empty/stale value in the Netlify UI can't be
   # interpolated into the install command.
-  NPM_FLAGS = "--no-audit --no-fund"
+NPM_FLAGS = "--no-audit --no-fund --loglevel=verbose"
