@@ -16,6 +16,20 @@
     <title>Velazquez Lawn Service — Maintenance &amp; Landscape</title>
   </head>
   <body>
+    <!--
+      Static copy of the contact form so Netlify's build-time HTML parser can
+      register it. The real form lives in src/components/ContactForm.jsx and is
+      client-rendered, which the parser never sees. Field names must stay in sync.
+    -->
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="contact" />
+      <input type="text" name="contactName" />
+      <input type="email" name="contactEmail" />
+      <input type="tel" name="contactPhone" />
+      <textarea name="message"></textarea>
+      <input name="bot-field" />
+    </form>
+
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
