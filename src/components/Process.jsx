@@ -7,14 +7,14 @@ const STEPS = [
 
 export default function Process() {
   return (
-    <div id="why-us" className="bg-forest rounded-[36px] px-[6%] py-[70px] text-white mx-[6%]">
+    <div id="why-us" className="bg-forest rounded-[28px] sm:rounded-[36px] px-7 sm:px-[6%] py-[50px] sm:py-[70px] text-white mx-6 sm:mx-[6%]">
       <div>
         <div className="text-green-light font-bold text-[0.85rem] tracking-[0.08em] uppercase">How It Works</div>
-        <h2 className="font-display text-white tracking-tight mt-3 text-[clamp(2rem,3.6vw,3rem)]">
+        <h2 className="font-display text-white tracking-tight mt-3 text-[clamp(1.75rem,3.6vw,3rem)]">
           From quote to first cut, fast
         </h2>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-[30px] mt-[50px]">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-[30px] gap-y-9 mt-10 sm:mt-[50px]">
         {STEPS.map((step) => (
           <div key={step.num}>
             <div className="font-display text-green-light text-[2rem] font-bold">{step.num}</div>

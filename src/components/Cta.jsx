@@ -2,9 +2,9 @@ import ContactForm from './ContactForm'
 
 export default function Cta() {
   return (
-    <section id="contact" className="px-[6%] py-[100px]">
-      <div className="bg-gradient-to-br from-green to-forest rounded-[36px] px-[6%] py-[70px] text-white">
-        <div className="grid grid-cols-1 md:grid-cols-[1fr_0.9fr] gap-[50px] items-center">
+    <section id="contact" className="px-6 sm:px-[6%] py-[70px] md:py-[100px]">
+      <div className="bg-gradient-to-br from-green to-forest rounded-[28px] sm:rounded-[36px] px-6 sm:px-[6%] py-[50px] sm:py-[70px] text-white">
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_0.9fr] gap-10 md:gap-[50px] items-center">
           <div>
             <div className="text-green-light font-bold text-[0.85rem] tracking-[0.08em] uppercase">Get Started</div>
             <h2 className="font-display mt-3 text-[clamp(1.8rem,4vw,2.8rem)] tracking-tight">

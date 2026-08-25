@@ -23,8 +23,8 @@ const SERVICES = [
 
 export default function Services() {
   return (
-    <section id="services" className="px-[6%] py-[110px]">
-      <div className="max-w-[640px] mb-14">
+    <section id="services" className="px-6 sm:px-[6%] py-[70px] md:py-[110px]">
+      <div className="max-w-[640px] mb-10 md:mb-14">
         <div className="text-green font-bold text-[0.85rem] tracking-[0.08em] uppercase">What We Do</div>
         <h2 className="font-display text-forest tracking-tight mt-3 text-[clamp(2rem,3.6vw,3rem)]">
           Full-service lawn &amp; landscape care
@@ -35,7 +35,7 @@ export default function Services() {
         {SERVICES.map((service) => (
           <div
             key={service.title}
-            className="bg-white rounded-[24px] p-9 border border-forest/[0.06] transition-all hover:-translate-y-1.5 hover:shadow-hover"
+            className="bg-white rounded-[24px] p-7 sm:p-9 border border-forest/[0.06] transition-all hover:-translate-y-1.5 hover:shadow-hover"
           >
             <div className="w-[52px] h-[52px] rounded-[14px] bg-[#eaf7ec] flex items-center justify-center text-2xl mb-5">
               {service.icon}

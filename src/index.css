@@ -4,6 +4,8 @@
 
 html {
   scroll-behavior: smooth;
+  /* Offset anchor targets so the fixed navbar doesn't cover section headings. */
+  scroll-padding-top: 90px;
 }
 
 body {

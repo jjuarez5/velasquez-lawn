@@ -19,8 +19,8 @@ const REVIEWS = [
 
 export default function Reviews() {
   return (
-    <section id="reviews" className="px-[6%] py-[110px]">
-      <div className="max-w-[640px] mb-14">
+    <section id="reviews" className="px-6 sm:px-[6%] py-[70px] md:py-[110px]">
+      <div className="max-w-[640px] mb-10 md:mb-14">
         <div className="text-green font-bold text-[0.85rem] tracking-[0.08em] uppercase">Reviews</div>
         <h2 className="font-display text-forest tracking-tight mt-3 text-[clamp(2rem,3.6vw,3rem)]">
           What the neighborhood's saying
@@ -29,7 +29,7 @@ export default function Reviews() {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {REVIEWS.map((review) => (
-          <div key={review.quote} className="bg-white rounded-[24px] p-[30px] border border-forest/[0.06]">
+          <div key={review.quote} className="bg-white rounded-[24px] p-7 sm:p-[30px] border border-forest/[0.06]">
             <div className="text-[#e8b94a] tracking-[2px] mb-3.5">★★★★★</div>
             <p className="text-[0.94rem] leading-relaxed text-[#3a4a3f] mb-4.5">"{review.quote}"</p>
             <div className="font-semibold text-[0.9rem]">{review.name}</div>

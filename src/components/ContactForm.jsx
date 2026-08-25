@@ -3,7 +3,7 @@ const FIELD_CLASS =
 
 export default function ContactForm() {
   return (
-    <div className="bg-white rounded-[28px] p-8 sm:p-10 shadow-card">
+    <div className="bg-white rounded-[24px] sm:rounded-[28px] p-6 sm:p-10 shadow-card">
       <h3 className="font-display text-forest text-[1.35rem] font-semibold">Request a Free Estimate</h3>
       <p className="mt-2 mb-7 text-[0.9rem] text-[#5a6b5e] leading-relaxed">
         Send your address and what you need — we'll get back to you the same day.
