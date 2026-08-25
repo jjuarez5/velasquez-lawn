@@ -1,0 +1,10 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  # Vite 8 requires Node ^20.19 || >=22.12; 24 ships npm 11.x.
+  NODE_VERSION = "24"
+  # Set explicitly so an empty/stale value in the Netlify UI can't be
+  # interpolated into the install command.
+  NPM_FLAGS = "--no-audit --no-fund"
