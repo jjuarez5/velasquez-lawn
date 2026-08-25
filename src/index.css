@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-paper text-ink font-sans;
+}
+
+.hero-stripes {
+  background-image: repeating-linear-gradient(
+    100deg,
+    rgba(47, 143, 91, 0.06) 0px,
+    rgba(47, 143, 91, 0.06) 90px,
+    rgba(47, 143, 91, 0.11) 90px,
+    rgba(47, 143, 91, 0.11) 180px
+  );
+}
+
+.hero-visual-texture::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.15), transparent 40%),
+    repeating-linear-gradient(115deg, rgba(255, 255, 255, 0.06) 0 40px, transparent 40px 80px);
+}
+
+.split-visual-texture {
+  position: absolute;
+  width: 140%;
+  height: 140%;
+  top: -20%;
+  left: -20%;
+  background: repeating-conic-gradient(from 0deg, rgba(18, 53, 36, 0.05) 0deg 8deg, transparent 8deg 16deg);
+  border-radius: 50%;
+}
